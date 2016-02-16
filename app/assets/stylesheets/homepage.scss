@@ -6,3 +6,44 @@
 background-color:  #ff4d4d;
 
 }
+
+body {
+width: 100%;
+height: 100%;
+color: #fff;
+background-color: #000;
+
+}
+
+html {
+width: 100%;
+height: 100%;
+
+}
+
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid, rgba(255, 255, 255, .3);
+  text-transform: uppercase;
+  font-family: "Helvetica";
+  background-color: #ff4d4d;
+}
+
+.navbar-custom .navbar-brand:focus {
+  outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+  padding: 4px 6px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+  outline: 0;
+}
+
+.navbar-custom a {
+  color: #fff;
+}
