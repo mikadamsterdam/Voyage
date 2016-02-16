@@ -1,0 +1,22 @@
+
+<% content_for :top_content do %>
+    <div class="container">
+<<<<<<< a568dde2df4e8eeef90927637a10985a1e4f776a
+      <h1>Welcome! Are you ready to travel ?</h1>
+      <p>Register to get started.</p>
+      <p>
+        <%= link_to 'Register', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+      </p>
+||||||| merged common ancestors
+      <h1>Welcome!</h1>
+      <p>Register to get started.</p>
+      <p>
+        <%= link_to 'Register', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+      </p>
+=======
+
+      <div class="logo" align="center"><%= image_tag "Voyage.png" %></div>
+
+>>>>>>> home page
+    </div>
+<% end %>
