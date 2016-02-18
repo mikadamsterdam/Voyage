@@ -1,22 +1,28 @@
 
 <% content_for :top_content do %>
-    <div class="container">
-<<<<<<< a568dde2df4e8eeef90927637a10985a1e4f776a
-      <h1>Welcome! Are you ready to travel ?</h1>
-      <p>Register to get started.</p>
-      <p>
-        <%= link_to 'Register', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
-      </p>
+<<<<<<< HEAD
+    <!--<div class="container">-->
+
+      <div class="logo" align="center"><%= image_tag "Voyage.png" %></div>
+
+    <!--</div>-->
+<% end %>
 ||||||| merged common ancestors
+  <div class="jumbotron">
+    <div class="container">
       <h1>Welcome!</h1>
       <p>Register to get started.</p>
       <p>
         <%= link_to 'Register', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
       </p>
+    </div>
+  </div>
+<% end %>
 =======
+    <div class="container">
 
       <div class="logo" align="center"><%= image_tag "Voyage.png" %></div>
 
->>>>>>> home page
     </div>
 <% end %>
+>>>>>>> 5a21d75c7fa8790cd71f2eb1fe4fb5ac18f67725
