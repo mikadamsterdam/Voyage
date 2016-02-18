@@ -1,19 +1,25 @@
-
 <% content_for :top_content do %>
-    <div class="col-md-8 col-md-offset-2">
-      <div class="logo" align="center"><%= image_tag "Voyage.png" %></div>
-     <p class="intro-text">
-       "Travel does the heart good."
-       <br>
-       "Created by: Mimammaar"
-     </p>
-     <a href="#about" class="btn btn-circle page-scroll">
-       <i class="fa fa-angle-double-down animated">
-         ::before
-       </i>
-     </a>
-    </div>
 
+<div class="col-md-8 col-md-offset-2">
+  <div align="center"><%= image_tag "Voyage.png", class: "logo"%></div>
+  <p align="center" class="intro-text">
+    <em>"Travel does the heart good."</em>
+    <br>
+    <em>"Created by: Mimammaar"</em>
+  </p>
+
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4">
+      <%= image_tag "sunset-plane.png", class: "video"%></div>
+    <div class="col-xs-4">
+      <%= image_tag "travel.gif", class: "video"%></div>
+    <div class="col-xs-4">
+      <%= image_tag "travel-industry-air.jpg", class: "video"%></div>
+  </div>
+</div>
 
 
 <% end %>
