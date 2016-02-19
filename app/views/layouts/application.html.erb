@@ -27,9 +27,9 @@
                       <i class="fa fa-bars"></i>
                   </button>
                   <a class="navbar-brand page-scroll" href="#page-top">
-                      <i class="fa fa-play-circle"></i> <span class="light">Voyage</span>
+                      <span><%= image_tag "Prop Plane-48.png", class: "light"%></span>
                   </a>
-              </div>
+              </div>  
 
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -42,7 +42,7 @@
                           <%= link_to "Main", root_path, class: "page-scroll" %>
                       </li>
                       <li>
-                          <a class="page-scroll" >Create an Account</a>
+                          <%= link_to "Create an Account", new_user_registration_path, class: "page-scroll" %>
                       </li>
                       <li>
                           <%= link_to "Log In", new_user_session_path, class: "page-scroll" %>
