@@ -1,0 +1,8 @@
+<h2>All Users</h2>
+
+  <% @users.each do |user| %>
+    <h2><%= user.first_name %> <%= user.last_name %></h2>
+    <p><%= user.email %></p>
+    <p><%= user.password %></p>
+    <p class="btn btn-default" role="button"><%= link_to "View details >", user %></p>
+  <% end %>

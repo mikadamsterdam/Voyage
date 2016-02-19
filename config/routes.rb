@@ -5,7 +5,13 @@ Rails.application.routes.draw do
     resources :likes
   end
   devise_for :users
-  resources :users
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
+
+  resources :relationships,       only: [:create, :destroy]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
