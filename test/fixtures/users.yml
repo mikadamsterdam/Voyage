@@ -13,3 +13,7 @@ archer:
   first_name: "archer"
   email: "test2@test.nl"
 #  column: value
+
+lana:
+  first_name: "lana"
+  email: "test3@test.nl"

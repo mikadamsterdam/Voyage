@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :posts
+  has_many :posts, dependent: :destroy
 
   has_many :active_relationships, class_name: "Relationship",
     foreign_key: "follower_id", dependent: :destroy
@@ -31,4 +31,11 @@ class User < ActiveRecord::Base
     following.include?(other_user)
   end
     has_many :likes
+
+  def feed
+    following_ids = "SELECT followed_id FROM relationships
+                 WHERE  follower_id = :user_id"
+    Post.where("user_id IN (#{following_ids})
+                 OR user_id = :user_id", user_id: id)
+  end
 end
