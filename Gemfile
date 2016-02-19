@@ -52,5 +52,6 @@ end
   gem 'devise', '3.4.1'
   gem 'bootstrap-sass'
   gem "mini_magick"
-  gem 'rails_12factor', '0.0.2'
+  gem 'rails_12factor', group: :production
   gem 'jquery-turbolinks'
+  ruby "2.2.3"
